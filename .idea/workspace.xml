@@ -4,14 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b057ab90-3fe4-4304-89f4-fe7a48d32891" name="Changes" comment="" />
+    <list default="true" id="b057ab90-3fe4-4304-89f4-fe7a48d32891" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/TShirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/manager/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/manager/ProductManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/repository/ProductRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IHag5FD9fHahcR47Ny0oQm26F5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,9 +44,110 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/Fungerrus/IdeaProjects/netoJava-13.1/src/test/java/ru/netology"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ProductManagerTest.searchTestCost">
+    <configuration name="ProductManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netoJava-13.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netoJava-13.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
+      <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.searchTestCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netoJava-13.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
+      <option name="METHOD_NAME" value="searchTestCost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netoJava-13.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.repository.ProductRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.removeId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netoJava-13.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="removeId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductManagerTest.searchTestCost" />
+        <item itemvalue="JUnit.ProductManagerTest" />
+        <item itemvalue="JUnit.ProductManagerTest.addTest" />
+        <item itemvalue="JUnit.ProductRepositoryTest" />
+        <item itemvalue="JUnit.ProductRepositoryTest.removeId" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,5 +158,16 @@
       <updated>1669841073423</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
