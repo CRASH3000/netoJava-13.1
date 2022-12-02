@@ -23,7 +23,7 @@ class ProductManagerTest {
     Product TShirt3 = new TShirt(9, "Хлопковая футболка Гарри Поттер", 275, "Black", "S");
 
     @Test
-    void addTest() {
+    public void addTest() {
         manager.add(book1);
         Product[] expected = {book1};
         Product[] actual = repository.getAll();
@@ -31,7 +31,7 @@ class ProductManagerTest {
     }
 
     @Test
-    void addAllTest() {
+    public void addAllTest() {
         manager.add(book2);
         manager.add(smartphone1);
         manager.add(TShirt1);
@@ -41,29 +41,51 @@ class ProductManagerTest {
     }
 
     @Test
-    void searchTestName() {
+    public void searchTestName() {
         manager.add(book2);
         manager.add(smartphone2);
         manager.add(TShirt2);
         String name = "Ходящий замок";
         Product[] expected = {};
-        Product[] actual = manager.searchBy(name);
+        Product[] actual = manager.search(name);
         Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-    void searchTestAuthor() {
+    public void searchTestColor() {
+        manager.add(TShirt1);
+        manager.add(TShirt2);
+        manager.add(TShirt3);
+        String color = "Bla";
+        Product[] expected = {};
+        Product[] actual = manager.search(color);
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void searchTestSize() {
+        manager.add(TShirt1);
+        manager.add(TShirt2);
+        manager.add(TShirt3);
+        String size = "XL";
+        Product[] expected = {};
+        Product[] actual = manager.search(size);
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void searchTestAuthor() {
         manager.add(book3);
         manager.add(smartphone2);
         manager.add(TShirt1);
         String author = "Дэвис Хэдленд";
         Product[] expected = {};
-        Product[] actual = manager.searchBy(author);
+        Product[] actual = manager.search(author);
         Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-    void searchTestOs() {
+    public void searchTestOs() {
         manager.add(book1);
         manager.add(smartphone1);
         manager.add(smartphone2);
@@ -71,42 +93,30 @@ class ProductManagerTest {
         manager.add(TShirt1);
         String os = "Android";
         Product[] expected = {};
-        Product[] actual = manager.searchBy(os);
+        Product[] actual = manager.search(os);
         Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-    void searchTestManufacturer() {
+    public void searchTestManufacturer() {
         manager.add(smartphone1);
         manager.add(smartphone2);
         manager.add(smartphone3);
         String manufacturer = "Apple";
         Product[] expected = {};
-        Product[] actual = manager.searchBy(manufacturer);
-        Assertions.assertArrayEquals(expected, actual);
-    }
-
-    @Test
-    void searchTestСolorr() {
-        manager.add(TShirt1);
-        manager.add(TShirt2);
-        manager.add(TShirt3);
-        manager.add(smartphone1);
-        String color = "Black";
-        Product[] expected = {};
-        Product[] actual = manager.searchBy(color);
+        Product[] actual = manager.search(manufacturer);
         Assertions.assertArrayEquals(expected, actual);
     }
 
 
     @Test
-    void searchTestAll() {
+    public void searchTestAll() {
         manager.add(book1);
         manager.add(smartphone1);
         manager.add(TShirt3);
         String name = "Гарри Поттер";
         Product[] expected = {book1, TShirt3};
-        Product[] actual = manager.searchBy(name);
+        Product[] actual = manager.search(name);
         Assertions.assertArrayEquals(expected, actual);
     }
 

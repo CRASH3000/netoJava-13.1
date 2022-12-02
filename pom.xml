@@ -65,6 +65,10 @@
                             <element>CLASS</element>
                             <excludes>
                                 <exclude>*Main</exclude>
+                                <exclude>*Product</exclude>
+                                <exclude>*Book</exclude>
+                                <exclude>*Smartphone</exclude>
+                                <exclude>*TShirt</exclude>
                             </excludes>
                             <limits>
                                 <limit>

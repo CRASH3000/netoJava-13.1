@@ -18,7 +18,13 @@ public class ProductRepository {
         return products;
     }
 
-    public Product[] removeId(int id) {
+
+    public void removeId(int id) {
+
+        if (findById(id) == null) {
+            throw new NotFoundException("По вашему id: " + id + " ничего не найдено");
+        }
+
         int length = products.length - 1;
         Product[] tmp = new Product[length];
         int index = 0;
@@ -29,6 +35,23 @@ public class ProductRepository {
             }
         }
         products = tmp;
-        return products;
+        // return products;
     }
+
+
+    public Product findById(int id) {
+        for (Product product : products) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        return null;
+    }
+
+
 }
+
+
+
+
+

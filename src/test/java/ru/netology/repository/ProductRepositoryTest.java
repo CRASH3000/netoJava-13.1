@@ -23,16 +23,26 @@ public class ProductRepositoryTest {
 
 
     @Test
-    public void saveOneProduct() {
+    public void searchOneProduct() {
         repository.save(smartphone1);
         Product[] expected = {smartphone1};
         Product[] actual = repository.getAll();
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void searchProductId() {
+        repository.save(book1);
+        repository.findById(1);
+
+        Product[] expected = {book1};
+        Product[] actual = repository.getAll();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
 
     @Test
-    public void SearchAll() {
+    public void searchAll() {
         repository.save(book1);
         repository.save(smartphone1);
         repository.save(TShirt1);
@@ -64,6 +74,26 @@ public class ProductRepositoryTest {
         Product[] expected = {};
         Product[] actual = repository.getAll();
         Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void failedRemoveId() {
+        repository.save(book2);
+
+        Assertions.assertThrows(NotFoundException.class, () -> {
+            repository.removeId(200);
+        });
+    }
+
+    @Test
+    public void failedRemoveIdAll() {
+        repository.save(book1);
+        repository.save(smartphone1);
+        repository.save(TShirt1);
+
+        Assertions.assertThrows(NotFoundException.class, () -> {
+            repository.removeId(8);
+        });
     }
 
 
